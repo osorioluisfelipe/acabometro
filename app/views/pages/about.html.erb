@@ -1,15 +1,17 @@
-<div class="container bg-white mt-5 mb-5 p-5">
-  <div class="card shadow-sm mt-5 mb-3">
-    <div class="row align-items-center mt-5">
-      <h2 class="col text-center">Acabômetro 🐬</h2>
-    </div>
-    <div class="progress m-5">
-      <div class="progress-bar progress-bar-striped progress-bar-animated text-center" role="progressbar" aria-valuenow="<%@percentage%>" aria-valuemin="0" aria-valuemax="100" style="width: <%=@percentage.to_f%>%">
-      <%=@percentage.to_f.round(2)%>
+<div class="banner">
+  <div class="container mt-5 mb-5 p-5">
+    <div>
+      <div class="row align-items-center mt-5">
+        <h2 class="col text-center">Acabômetro</h2>
       </div>
-    </div>
-    <div class="row ml-5">
-      <h3 class="col text-left"> Dias de sofrimento: <%= @sofrimento.to_i %></h3>
+      <div class="progress m-5">
+        <div class="progress-bar progress-bar-striped progress-bar-animated text-center" role="progressbar" aria-valuenow="<%@percentage%>" aria-valuemin="0" aria-valuemax="100" style="width: <%=@percentage.to_f%>%">
+          <%=@percentage.to_f.round(2)%>
+        </div>
+      </div>
+      <div class="row ml-5">
+        <h3 class="col text-left"> Dias de sofrimento: <%= @sofrimento.to_i %></h3>
+      </div>
     </div>
   </div>
 </div>
